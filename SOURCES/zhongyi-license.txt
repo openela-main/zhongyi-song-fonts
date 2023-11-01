@@ -1,0 +1,13 @@
+License of Use
+
+GB18030-2000 TrueType Chinese Character Song Font was appraised by China
+authorized department and tested by National Center for Quality Supervision and
+Inspection of Chinese Information Processing Products, which was designed and
+manufactured by Beijing Zhong Yi Electronics Co. and up to China National
+Standard. Beijing Zhong Yi Electronics Co. agrees to grant a license to Red Hat
+Inc. to use, copy, distribute and sell above mentioned GB18030-2000 True Type
+Chinese Character Song Font in all its products and software under its name. It
+is only usage right was licensed to Red Hat Inc. The copyright in which is owned
+by Beijing Electronics Co.
+
+Beijing Zhong Yi Electronics Co.
