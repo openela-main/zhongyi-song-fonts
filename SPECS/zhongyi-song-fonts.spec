@@ -1,15 +1,15 @@
 %global fontname zhongyi-song
-%global fontconf 65-0-%{fontname}.conf
+%global fontconf 65-0-0-%{fontname}.conf
 
 
 Name:           zhongyi-song-fonts
-Version:        0.1.20020329.1
-Release:        18%{?dist}
+Version:        3.00
+Release:        2.20231016%{?dist}
 Summary:        Zhong Yi Song -- GB18030 Standard Ming Face Chinese Font
 
-License:        Commercial
+License:        Zhong Yi Electronics Commercial
 URL:            http://www.china-e.com.cn/en/fonts/Font-Main.htm
-Source0:        zysong.ttf.tar.bz2
+Source0:        zysong-2022.tar.gz
 Source1:        %{fontname}-fontconfig.conf
 Source2:        zhongyi-license.txt
 
@@ -49,6 +49,14 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %license zhongyi-license.txt
 
 %changelog
+* Fri Jan  5 2024 Peng Wu <pwu@redhat.com> - 3.00-2.20231016
+- Update CI tests
+- Resolves: RHEL-16607
+
+* Mon Dec 18 2023 Peng Wu <pwu@redhat.com> - 3.00-1.20231016
+- Update to 3.00
+- Resolves: RHEL-16607
+
 * Mon Apr 18 2022 Peng Wu <pwu@redhat.com> - 0.1.20020329.1-18
 - Rebuild the package
 - Resolves: #2075544
