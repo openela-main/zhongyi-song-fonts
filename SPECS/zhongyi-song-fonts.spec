@@ -1,15 +1,15 @@
 %global fontname zhongyi-song
-%global fontconf 65-0-%{fontname}.conf
+%global fontconf 65-0-0-%{fontname}.conf
 
 
 Name:           zhongyi-song-fonts
-Version:        0.1.20020329.1
-Release:        17%{?dist}
+Version:        3.00
+Release:        1.20231016.1%{?dist}
 Summary:        Zhong Yi Song -- GB18030 Standard Ming Face Chinese Font
 
-License:        Commercial
+License:        Zhong Yi Electronics Commercial
 URL:            http://www.china-e.com.cn/en/fonts/Font-Main.htm
-Source0:        zysong.ttf.tar.bz2
+Source0:        zysong-2022.tar.gz
 Source1:        %{fontname}-fontconfig.conf
 Source2:        zhongyi-license.txt
 
@@ -18,7 +18,7 @@ BuildRequires:  fontpackages-devel
 Requires:       fontpackages-filesystem
 
 %description
-GB18030-2000 TrueType Chinese Character Song Font was appraised by China
+GB18030-2022 TrueType Chinese Character Song Font was appraised by China
 authorized department and tested by National Center for Quality Supervision and
 Inspection of Chinese Information Processing Products, which was designed and
 manufactured by Beijing Zhong Yi Electronics Co. and up to China National
@@ -49,6 +49,14 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %license zhongyi-license.txt
 
 %changelog
+* Wed Mar  6 2024 Peng Wu <pwu@redhat.com> - 3.00-1.20231016.1
+- Fix typo
+- Resolves: RHEL-17169
+
+* Mon Dec 18 2023 Peng Wu <pwu@redhat.com> - 3.00-1.20231016
+- Update to 3.00
+- Resolves: RHEL-17169
+
 * Fri Oct 12 2018 Peng Wu <pwu@redhat.com> - 0.1.20020329.1-17
 - Drop ghostscript sub-package.
 
