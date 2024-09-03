@@ -4,7 +4,7 @@
 
 Name:           zhongyi-song-fonts
 Version:        3.00
-Release:        2.20231016%{?dist}
+Release:        3.20231016%{?dist}
 Summary:        Zhong Yi Song -- GB18030 Standard Ming Face Chinese Font
 
 License:        Zhong Yi Electronics Commercial
@@ -18,11 +18,8 @@ BuildRequires:  fontpackages-devel
 Requires:       fontpackages-filesystem
 
 %description
-GB18030-2000 TrueType Chinese Character Song Font was appraised by China
-authorized department and tested by National Center for Quality Supervision and
-Inspection of Chinese Information Processing Products, which was designed and
-manufactured by Beijing Zhong Yi Electronics Co. and up to China National
-Standard.
+GB18030-2022 Level 2 TrueType Chinese Character Song Font designed and
+manufactured by Beijing Zhong Yi Electronics Co. to the China National Standard.
 
 %prep
 %setup -q -c
@@ -49,6 +46,10 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %license zhongyi-license.txt
 
 %changelog
+* Mon Jul  1 2024 Peng Wu <pwu@redhat.com> - 3.00-3.20231016
+- Update the description
+- Resolves: RHEL-28821
+
 * Fri Jan  5 2024 Peng Wu <pwu@redhat.com> - 3.00-2.20231016
 - Update CI tests
 - Resolves: RHEL-16607
